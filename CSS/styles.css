@@ -2,6 +2,7 @@ body{
     background-color: black;
 }
 
+/* ----------Estilos de la seccion de tareas----------*/
 .tareas{
     display: flex;
     justify-content: center;
@@ -9,14 +10,19 @@ body{
 }
 
 .header-tareas{
-    color: #7B9669;
     background-color: whitesmoke;
     border-radius: 15px;
     width: 50%;
     text-align: center;
-
 }
 
+.header-tareas .agregar-tarea{
+    font-size: 30px;
+    background-color:whitesmoke;
+    border-radius: 10px;
+    
+
+}
 
 .modal-tarea{
     
