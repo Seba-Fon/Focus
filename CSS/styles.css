@@ -10,22 +10,99 @@ body{
 }
 
 .header-tareas{
-    background-color: whitesmoke;
+    background-color: rgb(245, 235, 202);
     border-radius: 15px;
+    border: groove;
+    border-color: white;
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
-.header-tareas .agregar-tarea{
+.header-tareas h2{
     font-size: 30px;
-    background-color:whitesmoke;
-    border-radius: 10px;
-    
-
+    text-transform: uppercase;
 }
+
+/*----------Estilo de boton agregar tarea----------*/
+.agregar-tarea{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#7FAA65;
+    border:groove;
+    border-color: #82b36490;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+
+.agregar-tarea:hover{
+    background-color: #4ba01689;
+}
+
+.agregar-tarea:active{
+    transform: scale(0.95);
+}
+/*---------Fin estilos boton---------*/
+
+/*--------Inicio estilos modal--------*/
 
 .modal-tarea{
-    
     display: none;
-    
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+
 }
+
+.guardar{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#7FAA65;
+    border:groove;
+    border-color: #82b36490;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+.guardar:hover{
+    background-color: #4ba01689;
+}
+
+.guardar:active{
+    transform: scale(0.95);
+}
+
+.cancelar{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#ff0000;
+    border:groove;
+    border-color: #dd471e90;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+.cancelar:hover{
+    background-color: #4ba01689;
+}
+
+.cancelar:active{
+    transform: scale(0.95);
+}
+
+.modal-tarea.activo{
+    display:block
+}
+/*--------Fin estilos modal--------*/
+
+/*--------Fin estilos seccion tareas--------*/
