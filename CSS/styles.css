@@ -1,12 +1,17 @@
 body{
     background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ----------Estilos de la seccion de tareas----------*/
 .tareas{
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 50%;
+    height: 70%;
 }
 
 .header-tareas{
@@ -14,7 +19,8 @@ body{
     border-radius: 15px;
     border: groove;
     border-color: white;
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
     position: relative;
 }
@@ -37,6 +43,10 @@ body{
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: all 0.2s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
 }
 
 .agregar-tarea:hover{
@@ -51,11 +61,25 @@ body{
 /*--------Inicio estilos modal--------*/
 
 .modal-tarea{
+    position:fixed;
     display: none;
-    background-color: white;
+    background-color: rgb(85, 85, 85);
     border-radius: 10px;
     padding: 50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
 
+.modal-content{
+    background: rgb(85, 85, 85);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
 .guardar{
@@ -101,7 +125,8 @@ body{
 }
 
 .modal-tarea.activo{
-    display:block
+    display:flex
+    
 }
 /*--------Fin estilos modal--------*/
 
@@ -132,3 +157,5 @@ body{
 /*--------fin estilos lista--------*/
 
 /*--------Fin estilos seccion tareas--------*/
+
+
