@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------Estilos de la seccion de tareas----------*/
+.tareas{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+}
+
+.header-tareas{
+    background-color: rgb(245, 235, 202);
+    border-radius: 15px;
+    border: groove;
+    border-color: white;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.header-tareas h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*----------Estilo de boton agregar tarea----------*/
+.agregar-tarea{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#7FAA65;
+    border:groove;
+    border-color: #82b36490;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+.agregar-tarea:hover{
+    background-color: #4ba01689;
+}
+
+.agregar-tarea:active{
+    transform: scale(0.95);
+}
+/*---------Fin estilos boton---------*/
+
+/*--------Inicio estilos modal--------*/
+
+.modal-tarea{
+    position:fixed;
+    display: none;
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+    padding: 50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.modal-content{
+    background: rgb(85, 85, 85);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.guardar{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#7FAA65;
+    border:groove;
+    border-color: #82b36490;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+.guardar:hover{
+    background-color: #4ba01689;
+}
+
+.guardar:active{
+    transform: scale(0.95);
+}
+
+.cancelar{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color:#ff0000;
+    border:groove;
+    border-color: #dd471e90;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+.cancelar:hover{
+    background-color: #4ba01689;
+}
+
+.cancelar:active{
+    transform: scale(0.95);
+}
+
+.modal-tarea.activo{
+    display:flex
+    
+}
+/*--------Fin estilos modal--------*/
+
+/*--------Inicio estilos lista--------*/
+.lista-tareas{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    background: #1e293b;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+
+.lista-tareas li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #334155;
+    color: #e2e8f0;
+    transition: 0.2s;
+}
+
+.lista-tareas li:hover {
+    background: #334155;
+}
+
+.lista-tareas li:last-child {
+    border-bottom: none;
+}
+/*--------fin estilos lista--------*/
+
+/*--------Fin estilos seccion tareas--------*/
+
+
